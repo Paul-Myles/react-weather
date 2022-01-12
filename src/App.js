@@ -5,14 +5,6 @@ function App() {
   const [query, setQuery] = useState('');
   const [weather, setWeather] = useState({});
 
-  // const [data, setData] = React.useState(null);
-
-  // React.useEffect(() => {
-  //   fetch("/api")
-  //     .then((res) => res.json())
-  //     .then((data) => setData(data.key))
-  // }, []);
-
   const search = evt => {
     if (evt.key === "Enter") {
       fetch(`https://api.openweathermap.org/data/2.5/weather?q=${query}&units=metric&APPID=${WEATHER_API_KEY}`)
