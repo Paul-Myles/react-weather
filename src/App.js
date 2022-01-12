@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import WEATHER_API_KEY from './api/key.js';
+import WEATHER_API_KEY from './key.js';
 
 function App() {
   const [query, setQuery] = useState('');
